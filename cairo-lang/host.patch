@@ -1,0 +1,4 @@
+99c99
+<                 return SimpleTCPServer(("localhost", port), Handler)
+---
+>                 return SimpleTCPServer(("0.0.0.0", port), Handler)
