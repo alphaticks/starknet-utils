@@ -1,0 +1,14 @@
+services:
+  node:
+    image: starknet-node:0.0
+    ports: 
+      - "9545:9545"
+    environment:
+      - ETHEREUM_URL=<your-url-to-node-provider>
+    volumes:
+      - type: volume
+        source: pathfinder_data
+        target: /usr/share/pathfinder/data
+
+volumes:
+  pathfinder_data:
