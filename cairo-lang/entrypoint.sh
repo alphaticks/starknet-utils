@@ -10,4 +10,12 @@ case $1 in
         shift 1
         /usr/local/bin/cairo-compile $@
         ;;
+    "starknet" )
+        shift 1
+        /usr/local/bin/starknet $@
+        ;;
+    "starknet-compile" )
+        shift 1
+        /usr/local/bin/starknet-compile $@
+        ;;
 esac
