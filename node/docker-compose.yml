@@ -1,7 +1,7 @@
 services:
   node:
-    image: starknet-node:1.0
-    ports: 
+    image: alphaticks/starknet-node:1.0
+    ports:
       - "9545:9545"
     environment:
       - ETHEREUM_URL=<your-url-to-node-provider>
