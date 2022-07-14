@@ -1,6 +1,6 @@
 services:
   node:
-    image: starknet-node:0.0
+    image: starknet-node:1.0
     ports: 
       - "9545:9545"
     environment:
